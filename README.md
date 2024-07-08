@@ -13,11 +13,10 @@ What I’ve built with Generative AI (so far):
 + [Condensing long podcasts](https://nbsanity.com/static/07dba1cb4a8538af06b6e05d96878eb3/transcript_summarization_final.html#:~:text=In%20this%20prompt%2C%20I%E2%80%99m%20trying%20to%20find%20a%20balance%20%2D%20a%20summary%20yet%20not%20too%20condensed%2C%20since%20a%20final%20summary%20will%20take%20place%20later.) into nuggets of wisdom. Workflow involves splitting text and multi-step prompting ([GitHub link](https://github.com/DesmondChoy/podcast_transcript))
 + Implementing [RAG on financial documents](https://nbsanity.com/static/360e99a69f40d828b2f5cf7371072bef/rag.html#question-answering) and evaluating retrieval methods ([GitHub link](https://github.com/DesmondChoy/financial_text_rag))
 
-ML end-to-end pipeline: "What Makes A Cup Of Coffee Memorable?"
-+ Utilized k-nearest neighbors to impute missing values
-+ Engineered new features, trained a LASSO, Random Forest, and XGBoost model, tuned hyperparameters and selected the best model
-+ Test RMSE proved better than training RMSE, indicating no overfitting.
-+ Variable importance was analyzed to understand which predictors were relatively more influential in the respective models
+ML end-to-end pipeline: ["What Makes A Cup Of Coffee Memorable?"](https://desmondchoy.github.io/r_projects/2020-08-29-predicting-coffee-quality-with-ml.en-us.html)
++ Showcased detailed feature engineering pipeline (thresholding, knn imputing, normalizing, etc)
++ Trained, resampled, and tuned hyperparameters for LASSO, Random Forest, and XGBoost models, then evaluating models on test data
++ Utilized variable importance to understand top predictors across models (one of my created feature ranked highest)
 
 ## ⚡ Technologies 
 
