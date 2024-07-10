@@ -1,6 +1,6 @@
 ### Hello, my name is Desmond
 
-I am a Data Science Manager at Pacific Life Re, where I primarily operate as an individual contributor but occasionally help to lead large team projects as scrum master. 
+I am a Data Science Manager at Pacific Life Re, where I primarily operate as an individual contributor (Shiny apps linked to actuarial assumptions, 100% local LLM RAG chatbot, ML predictive models, etc)  but occasionally help to lead large team projects as scrum master. 
 
 I relish the journey of learning, growing and applying my knowledge in data science, machine learning, and AI to build new tools and explore interesting datasets. Perhaps that's why I'm drawn to both my current field and past (investment research & portfolio management) as they are multidisciplinary in nature.
 
