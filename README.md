@@ -12,12 +12,21 @@ Off work, I enjoy tinkering with open source tools to build and experiment, as w
 
 ## 🏗️ Projects Highlights
 
-Building and Developing with Generative AI:
-+ [AI voice assistant](https://nbsanity.com/static/1fa0f3c9c93d58847829cbbb8aecde56/ai_insurance_underwriter.html#voice-assistant-prompt) insurance underwriter that offers a fluid life-like conversational experience. The customer’s transcript (unstructured) can be converted to [structured output](https://nbsanity.com/static/1fa0f3c9c93d58847829cbbb8aecde56/ai_insurance_underwriter.html#llm-prompt) format by passing it to a secondary prompt ([GitHub link](https://github.com/DesmondChoy/ai_underwriter))
-+ [Condensing long podcasts](https://nbsanity.com/static/07dba1cb4a8538af06b6e05d96878eb3/transcript_summarization_final.html#:~:text=In%20this%20prompt%2C%20I%E2%80%99m%20trying%20to%20find%20a%20balance%20%2D%20a%20summary%20yet%20not%20too%20condensed%2C%20since%20a%20final%20summary%20will%20take%20place%20later.) into nuggets of wisdom. Workflow involves splitting text and multi-step prompting ([GitHub link](https://github.com/DesmondChoy/podcast_transcript))
-+ Implementing [RAG on financial documents](https://nbsanity.com/static/360e99a69f40d828b2f5cf7371072bef/rag.html#question-answering) and evaluating retrieval methods ([GitHub link](https://github.com/DesmondChoy/financial_text_rag))
+Building GenAI apps to solve real world problems:
 
-ML end-to-end pipeline: ["What Makes A Cup Of Coffee Memorable?"](https://desmondchoy.github.io/r_projects/2020-08-29-predicting-coffee-quality-with-ml.en-us.html)
++ **Multi-Agent Recommender System** ([GitHub link](https://github.com/DesmondChoy/agents_recsys))  
+Don’t know which insurance policy is right for you?  
+Let a system of agents help you - they work together to provide personalized recommendations for travel insurance. Customizable and scalable.
++ **AI Voice Assistant** ([GitHub link](https://github.com/DesmondChoy/ai_underwriter))  
+Have a fluid life-like conversation when buying insurance.  
+Customers’ transcript (unstructured) is converted to structured output which can be used for downstream LLM/ML workflows. 
++ **Podcast Summarizer** ([GitHub link](https://github.com/DesmondChoy/podcast_transcript))  
+Too busy to listen to all the interesting podcasts out there?  
+Try condensing them into nuggets of wisdom. Utilizes text splitting and multi-step prompting.
++ **Retrieval Augmented Generation** ([GitHub link](https://github.com/DesmondChoy/financial_text_rag))  
+RAG over financial documents. Retrieval methods are evaluated.
+
+**ML end-to-end pipeline**: [What Makes A Cup Of Coffee Memorable?](https://desmondchoy.github.io/r_projects/2020-08-29-predicting-coffee-quality-with-ml.en-us.html)
 + Showcased detailed feature engineering pipeline (thresholding, knn imputing, normalizing, etc)
 + Trained, resampled, and tuned hyperparameters for LASSO, Random Forest, and XGBoost models, then evaluating models on test data
 + Utilized variable importance to understand top predictors across models (one of my created feature ranked highest)
@@ -33,14 +42,14 @@ Python, R, SQL
 
 **🧹 Data Tidying, Visualization, EDA**  
 Python: Polars, Pandas, Plotnine  
-R: Tidyverse, Shiny
+R: Tidyverse, ggplot2, Shiny
 
 **🤖 Machine Learning**  
 Python: Scikit-Learn, XGBoost  
 R: Tidymodels
 
 **🎲 Deep Learning / LLMs**  
-Transformers, PyTorch, Langchain
+Transformers, PyTorch, Langchain, CrewAI
 
 **☁️ Cloud**  
 AWS, Github, Bitbucket
