@@ -15,8 +15,9 @@ Off work, I enjoy tinkering with open source tools to build and experiment, as w
 Building GenAI apps to solve real world problems:
 
 + **Multi-Agent Recommender System** ([GitHub link](https://github.com/DesmondChoy/agents_recsys))  
-Don’t know which insurance policy is right for you?  
-Let a system of agents help you - they work together to provide personalized recommendations for travel insurance. Customizable and scalable.
+You want certain coverage but don't wish to spend time crawling through all the different policies out there?   
+Let a system of agents help you - they work together to provide personalized recommendations for travel insurance.  
+Customizable and scalable.
 + **AI Voice Assistant** ([GitHub link](https://github.com/DesmondChoy/ai_underwriter))  
 Have a fluid life-like conversation when buying insurance.  
 Customers’ transcript (unstructured) is converted to structured output which can be used for downstream LLM/ML workflows. 
