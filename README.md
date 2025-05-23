@@ -1,10 +1,12 @@
 ### Hello, my name is Desmond
 
-I am a Data Science Manager at Pacific Life Re, where I primarily operate as an individual contributor (Shiny apps linked to actuarial assumptions, 100% local LLM RAG chatbot, ML predictive models, etc)  but occasionally help to lead large team projects as scrum master. 
+I'm a Data Science Manager at Pacific Life Re who has evolved from traditional data science into AI engineering, building production-ready systems that solve real business and consumer challenges. I've expanded my expertise into full-stack AI development, deploying sophisticated platforms like Learning Odyssey, an AI-powered educational application with complex state management, real-time content generation, and thousands of dynamic narrative permutations.
 
-I relish the journey of learning, growing and applying my knowledge in data science, machine learning, and AI to build new tools and explore interesting datasets. Perhaps that's why I'm drawn to both my current field and past (investment research & portfolio management) as they are multidisciplinary in nature.
+My approach combines deep technical implementation with strategic thinking, whether I'm architecting WebSocket-based real-time systems, integrating multiple AI APIs for seamless user experiences, or leading cross-functional teams as a scrum master.
 
-Off work, I enjoy tinkering with open source tools to build and experiment, as well as exploring unusual datasets. Please refer to Project Highlights below for more details. 
+I thrive at the intersection of emerging AI technologies and practical applications, continuously experimenting with cutting-edge tools while ensuring production-grade reliability and scalability.
+
+My multidisciplinary background spanning investment research, portfolio management, and insurance technology has taught me to identify valuable use cases for AI across industries. I'm passionate about pushing the boundaries of what's possible with AI engineering—from building conversational AI systems to creating personalized, adaptive experiences that demonstrate the transformative potential of thoughtfully applied artificial intelligence.
 
 ## 🔗 Connect with me 
 <a href="https://www.linkedin.com/in/choydesmond/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
@@ -14,6 +16,10 @@ Off work, I enjoy tinkering with open source tools to build and experiment, as w
 
 Building GenAI apps to solve real world problems:
 
++ **Learning Odyssey** ([GitHub link](https://github.com/DesmondChoy/adventures))  
+Need to keep children engaged while learning, but traditional educational apps feel repetitive and boring?  
+This AI-powered platform generates unique, interactive adventures where educational content seamlessly integrates into personalized storylines that adapt in real-time to each child's choices.  
+Built with a sophisticated Python/FastAPI backend, WebSocket architecture for real-time interactions, and complex state management supporting thousands of narrative permutations while maintaining visual and story consistency throughout the journey.
 + **Multi-Agent Recommender System** ([GitHub link](https://github.com/DesmondChoy/agents_recsys))  
 Looking for specific travel insurance coverage but don't want to painstakingly look through dozens of policies?   
 Let a system of agents help you - they work together to provide personalized recommendations based on your requirements.  
