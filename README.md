@@ -7,7 +7,7 @@ Key components built with Agentic AI coding tools:
 - Event-driven state management that ensures disconnects don't hamper replayability
 - Multi-model LLM Orchestration optimized for cost & latency
 - Sophisticated prompt engineering that ensures an engaging, captivating storyline
-- Visual consistency architecture that preserves character appearance integrity across LLM story permutations
+- Visual consistency architecture that preserves character appearance integrity across AI-generated story variations
 - Comprehensive observability with structured logging and telemetry (Supabase)
 - Authentication flows supporting both OAuth and anonymous users
 
