@@ -1,10 +1,15 @@
 ### Hello, my name is Desmond
 
-I'm a Data Science Manager at Pacific Life Re who has evolved from traditional data science into AI engineering, building production-ready systems that solve real business and consumer challenges. I've expanded my expertise into full-stack AI development, deploying sophisticated platforms like Learning Odyssey, an AI-powered educational application with complex state management, real-time content generation, and thousands of dynamic narrative permutations.
+Data Scientist turned AI engineer, I've expanded my expertise into full-stack AI development, deploying modern apps like [Learning Odyssey](https://learning-odyssey.up.railway.app/), an AI-augmented experience that brings together unlimited dynamic narrative permutations with real-world lessons. 
 
-My approach combines deep technical implementation with strategic thinking, whether I'm architecting WebSocket-based real-time systems, integrating multiple AI APIs for seamless user experiences, or leading cross-functional teams as a scrum master.
+Key components built with Agentic AI coding tools:
 
-I thrive at the intersection of emerging AI technologies and practical applications, continuously experimenting with cutting-edge tools while ensuring production-grade reliability and scalability.
+- Event-driven state management that ensures disconnects don't hamper replayability
+- Multi-model LLM Orchestration optimized for cost & latency
+- Sophisticated prompt engineering that ensures an engaging, captivating storyline
+- Visual consistency architecture that preserves character appearance integrity across LLM story permutations
+- Comprehensive observability with structured logging and telemetry (Supabase)
+- Authentication flows supporting both OAuth and anonymous users
 
 My multidisciplinary background spanning investment research, portfolio management, and insurance technology has taught me to identify valuable use cases for AI across industries. I'm passionate about pushing the boundaries of what's possible with AI engineering—from building conversational AI systems to creating personalized, adaptive experiences that demonstrate the transformative potential of thoughtfully applied artificial intelligence.
 
