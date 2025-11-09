@@ -11,7 +11,7 @@ Key components built with Agentic AI coding tools:
 - Comprehensive observability with structured logging and telemetry (Supabase)
 - Authentication flows supporting both OAuth and anonymous users
 
-My multidisciplinary background spanning investment research, portfolio management, and insurance technology has taught me to identify valuable use cases for AI across industries. I'm passionate about pushing the boundaries of what's possible with AI engineering—from building conversational AI systems to creating personalized, adaptive experiences that demonstrate the transformative potential of thoughtfully applied artificial intelligence.
+My multidisciplinary background spanning investment research, telecoms and life insurance has taught me to identify valuable use cases for AI across industries. I'm passionate about pushing the boundaries of what's possible with AI engineering — from building agentic AI systems to creating personalized, adaptive experiences that demonstrate the transformative potential of thoughtfully applied artificial intelligence.
 
 ## 🔗 Connect with me 
 <a href="https://www.linkedin.com/in/choydesmond/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
