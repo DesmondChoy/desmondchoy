@@ -1,82 +1,29 @@
-### Hello, my name is Desmond
+## Hello, my name is Desmond
 
-Data Scientist turned AI engineer, I've expanded my expertise into full-stack AI development, deploying modern apps like [Learning Odyssey](https://learning-odyssey.up.railway.app/), an AI-augmented experience that brings together unlimited dynamic narrative permutations with real-world lessons. 
+Data scientist turned AI engineer. I build full-stack AI applications — from dual-model LLM orchestration and real-time WebSocket architectures to autonomous multi-agent systems and self-supervised learning research. My work spans education, music, computer vision, and behavioral science, with a bias toward shipping production apps over accumulating notebooks.
 
-Key components built with Agentic AI coding tools:
+## Project Highlights
 
-- Event-driven state management that ensures disconnects don't hamper replayability
-- Multi-model LLM Orchestration optimized for cost & latency
-- Sophisticated prompt engineering that ensures an engaging, captivating storyline
-- Visual consistency architecture that preserves character appearance integrity across AI-generated story variations
-- Comprehensive observability with structured logging and telemetry (Supabase)
-- Authentication flows supporting both OAuth and anonymous users
+**[Learning Odyssey](https://github.com/DesmondChoy/adventures)** | [Free to Play](https://learning-odyssey.up.railway.app/) — AI-powered interactive storytelling that makes learning invisible. Children pick a fantasy world (Jade Mountain, Enchanted Forest, Festival of Lights, etc) and an educational topic (Astronomy, Ancient Civilisations, Human Body, etc) — the system then weaves real trivia into a branching narrative where quiz answers have plot consequences. A dual-model LLM architecture routes between Gemini Flash and Flash Lite by task complexity, cutting inference costs ~50%. WebSocket streaming delivers chapters in real-time across a 10-chapter arc, with state persistence so adventures survive disconnects and can be resumed mid-chapter. Every playthrough is unique — no two children get the same story.
 
-My multidisciplinary background spanning investment research, telecoms and life insurance has taught me to identify valuable use cases for AI across industries. I'm passionate about pushing the boundaries of what's possible with AI engineering — from building agentic AI systems to creating personalized, adaptive experiences that demonstrate the transformative potential of thoughtfully applied artificial intelligence.
+**[NANA](https://github.com/DesmondChoy/nana)** | [Live Demo](https://nana-app.up.railway.app/) — AI study assistant that transforms PDFs into personalized learning notes. A two-phase pipeline sends the PDF to Gemini once for structured extraction, then generates notes per-page using only text payloads — reducing API costs ~70% vs naive approaches. Notes adapt to the learner's expertise, math comfort, and learning goals: a software engineer and a biologist studying the same material get completely different analogies. Inline commands let you elaborate, simplify, or generate domain-specific analogies without leaving the page. BYOK architecture means zero server-side API key storage.
 
-## 🔗 Connect with me 
-<a href="https://www.linkedin.com/in/choydesmond/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="https://x.com/Norest" target="_blank"><img alt="Twitter" src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" /></a>
+**[cc_sick_beats](https://github.com/DesmondChoy/cc_sick_beats)** — Autonomous AI band members jam together via Claude Code and Strudel.cc. This isn't just collaborative playback: agents genuinely react to each other. Every 30 seconds, each agent receives the full band state — what everyone else is currently playing — and decides whether to evolve its own pattern or hold the groove. GROOVE locks its kick placement to BEAT's rhythm; ARIA resolves tension against GROOVE's bass line; GLITCH high-passes above 300Hz to stay out of everyone's way. A human "boss" can direct the whole band or target individual agents via @mention syntax. Each agent runs as a persistent Claude process with conversational memory across rounds, so musical personality accumulates over the session.
 
-## 🏗️ Projects Highlights
+**[moodsic](https://github.com/DesmondChoy/moodsic)** | [Live Demo](https://moodsic-fe.onrender.com/) — Emotion-aware music recommendation using a dual-pathway fusion architecture. A face pathway (EmoNet) captures valence/arousal from facial expressions while a scene pathway (CLIP ViT-B/32) reads emotional context from the visual environment. Variance-weighted blending (0.6 scene / 0.4 face) outperforms face-only by ~7% and scene-only by ~19% on held-out VEATIC data. Recommended songs are matched via nearest-centroid search against a GMM-clustered DEAM music catalogue.
 
-Building GenAI apps to solve real world problems:
+**[twinkl](https://github.com/DesmondChoy/twinkl)** — An "inner compass" that answers: *am I living in line with what I said I value?* When users journal, a Value Identity Function scores alignment across 10 Schwartz value dimensions, detecting drift between declared priorities and actual behavior over time. When patterns emerge — sustained misalignment, sudden crashes, or quiet ruts — an explanation layer surfaces context-rich reflections grounded in the user's own history. Currently in POC, validating core hypotheses around pattern detection and uncertainty-aware feedback. Training data generated via a synthetic pipeline, labeled by Claude subagents and validated against human annotations.
 
-+ **Learning Odyssey** ([GitHub link](https://github.com/DesmondChoy/adventures))  
-Need to keep children engaged while learning, but traditional educational apps feel repetitive and boring?  
-This AI-powered platform generates unique, interactive adventures where educational content seamlessly integrates into personalized storylines that adapt in real-time to each child's choices.  
-Built with a sophisticated Python/FastAPI backend, WebSocket architecture for real-time interactions, and complex state management supporting thousands of narrative permutations while maintaining visual and story consistency throughout the journey.
-+ **Multi-Agent Recommender System** ([GitHub link](https://github.com/DesmondChoy/agents_recsys))  
-Looking for specific travel insurance coverage but don't want to painstakingly look through dozens of policies?   
-Let a system of agents help you - they work together to provide personalized recommendations based on your requirements.  
-Customizable and scalable.
-+ **AI Voice Assistant** ([GitHub link](https://github.com/DesmondChoy/ai_underwriter))  
-Have a fluid life-like conversation when buying insurance.  
-Customers’ transcript (unstructured) is converted to structured output which can be used for downstream LLM/ML workflows. 
-+ **Podcast Summarizer** ([GitHub link](https://github.com/DesmondChoy/podcast_transcript))  
-Too busy to listen to all the interesting podcasts out there?  
-Try condensing them into nuggets of wisdom. Utilizes text splitting and multi-step prompting.
-+ **Retrieval Augmented Generation** ([GitHub link](https://github.com/DesmondChoy/financial_text_rag))  
-RAG over financial documents. Retrieval methods are evaluated.
+**[ssl_wikichurches](https://github.com/DesmondChoy/ssl_wikichurches)** — Do self-supervised learning (SSL) vision models see what expert architects see? An ongoing research project investigating three questions: (1) whether self-supervised models naturally attend to the same visual features experts consider diagnostic for architectural style, (2) how task-specific fine-tuning shifts attention patterns — and whether linear probing, LoRA, and full fine-tuning produce meaningfully different outcomes, and (3) whether individual attention heads specialize for distinct architectural features, suggesting emergent expert-aligned representations. Evaluated across five ViT-Base models (DINOv2, DINOv3, MAE, CLIP, SigLIP 2) using the WikiChurches dataset.
 
-**ML end-to-end pipeline**: [What Makes A Cup Of Coffee Memorable?](https://desmondchoy.github.io/r_projects/2020-08-29-predicting-coffee-quality-with-ml.en-us.html)
-+ Showcased detailed feature engineering pipeline (thresholding, knn imputing, normalizing, etc)
-+ Trained, resampled, and tuned hyperparameters for LASSO, Random Forest, and XGBoost models, then evaluating models on test data
-+ Utilized variable importance to understand top predictors across models (one of my created feature ranked highest)
+## Technologies
 
-Full list of projects: [Python](https://github.com/DesmondChoy?tab=repositories) | [R](https://desmondchoy.github.io/r_projects/)
+**Languages:** Python, TypeScript, SQL, R
 
-## ⚡ Technologies 
+**AI/ML:** OpenAI/Claude/Gemini API, PyTorch, Transformers, Scikit-Learn, XGBoost
 
-Below is a list of open source technologies (frameworks, libraries, and languages) I regularly use and am familiar with. 
+**Backend:** FastAPI, WebSockets, Pydantic, Supabase, PostgreSQL
 
-**🗣️ Programming Languages**  
-Python, R, SQL
+**Frontend:** React, Next.js, Vite, Shiny
 
-**🧹 Data Tidying, Visualization, EDA**  
-Python: Polars, Pandas, Plotnine  
-R: Tidyverse, ggplot2, Shiny
-
-**🤖 Machine Learning**  
-Python: Scikit-Learn, XGBoost  
-R: Tidymodels
-
-**🎲 Deep Learning / LLMs**  
-Transformers, PyTorch, Langchain, CrewAI
-
-**☁️ Cloud**  
-AWS, Github, Bitbucket
-
-<!--
-**DesmondChoy/desmondchoy** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+**Infrastructure:** Railway, AWS, Docker, GitHub Actions
