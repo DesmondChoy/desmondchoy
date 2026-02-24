@@ -4,9 +4,36 @@ Data scientist turned AI engineer. I build full-stack AI applications — from d
 
 ## Project Highlights
 
-**[Learning Odyssey](https://github.com/DesmondChoy/adventures)** | [Free to Play](https://learning-odyssey.up.railway.app/) — AI-powered interactive storytelling that makes learning invisible. Children pick a fantasy world (Jade Mountain, Enchanted Forest, Festival of Lights, etc) and an educational topic (Astronomy, Ancient Civilisations, Human Body, etc) — the system then weaves real trivia into a branching narrative where quiz answers have plot consequences. A dual-model LLM architecture routes between Gemini Flash and Flash Lite by task complexity, cutting inference costs ~50%. WebSocket streaming delivers chapters in real-time across a 10-chapter arc, with state persistence so adventures survive disconnects and can be resumed mid-chapter. Every playthrough is unique — no two children get the same story.
+**[Learning Odyssey](https://github.com/DesmondChoy/adventures)** | [Free to Play](https://learning-odyssey.up.railway.app/)
 
-**[NANA](https://github.com/DesmondChoy/nana)** | [Live Demo](https://nana-app.up.railway.app/) — AI study assistant that transforms PDFs into personalized learning notes. A two-phase pipeline sends the PDF to Gemini once for structured extraction, then generates notes per-page using only text payloads — reducing API costs ~70% vs naive approaches. Notes adapt to the learner's expertise, math comfort, and learning goals: a software engineer and a biologist studying the same material get completely different analogies. Inline commands let you elaborate, simplify, or generate domain-specific analogies without leaving the page. BYOK architecture means zero server-side API key storage.
+  Imagine a child choosing to explore an Underwater Kingdom — then picking "Astronomy" as their learning topic. The AI builds them a one-of-a-kind
+  10-chapter adventure: they craft a magical artifact, encounter bioluminescent creatures who teach them about Jupiter's gravity, reflect on what
+  they've learned inside a coral palace, and make choices that visually reshape their protagonist across AI-generated illustrations. When the story
+  ends, they get a personalized learning report showing every question they answered and why the answers matter.
+
+  That's Learning Odyssey — an AI storytelling platform where education is invisible because the story is that engaging.
+
+  What makes it interesting technically:
+  - Dual-model LLM architecture routes between Gemini Flash and Flash Lite by task complexity (~50% cost reduction across ~515 educational questions
+   and 10 fantasy worlds)
+  - A two-step image pipeline extracts scenes, merges them with tracked character visuals, and synthesizes prompts for Imagen — so illustrations
+  stay consistent chapter-to-chapter
+  - Content is validated (3 choices, retried up to 3x) before streaming word-by-word over WebSocket, with non-critical work deferred to background
+  tasks
+  - Sessions survive disconnects with Supabase-backed state persistence and field-level corruption recovery
+
+  Stack: FastAPI · Supabase · Google Gemini & Imagen · React · Tailwind · Railway
+
+**[NANA](https://github.com/DesmondChoy/nana)** | [Live Demo](https://nana-app.up.railway.app/)
+
+Every complex document assumes knowledge you might not have. NANA bridges that gap: upload a PDF, set your background, and get a side-by-side view — original document on the left, AI-generated study notes on the right, personalized to your expertise, math comfort, and learning goal.
+
+An equity research report explained through a PM's lens. A technical whitepaper translated for a non-technical founder. A medical paper made accessible to a policy analyst. The same PDF produces entirely different notes for different readers — different analogies, different depth, different notation.
+- Select any sentence to elaborate, simplify, or reframe with a domain-specific analogy.
+- Paste your own notes and the system weaves them into the AI output.
+- Notes render LaTeX, use Obsidian-style callouts, and maintain narrative flow across pages.
+
+Under the hood: a two-phase Gemini pipeline (extract once, generate per-page) cuts API costs ~70-80% vs sending the full PDF per page — structured output guarantees, no embeddings, no vector stores, fully stateless backend. Notes cached client-side with full-text search and content-hashed Markdown export/import. BYOK, zero server-side key storage.
 
 **[cc_sick_beats](https://github.com/DesmondChoy/cc_sick_beats)** — Autonomous AI band members jam together via Claude Code and Strudel.cc. This isn't just collaborative playback: agents genuinely react to each other. Every 30 seconds, each agent receives the full band state — what everyone else is currently playing — and decides whether to evolve its own pattern or hold the groove. GROOVE locks its kick placement to BEAT's rhythm; ARIA resolves tension against GROOVE's bass line; GLITCH high-passes above 300Hz to stay out of everyone's way. A human "boss" can direct the whole band or target individual agents via @mention syntax. Each agent runs as a persistent Claude process with conversational memory across rounds, so musical personality accumulates over the session.
 
