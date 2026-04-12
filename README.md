@@ -1,5 +1,7 @@
 ## Hello, my name is Desmond
 
+[Website](https://desmondchoy.github.io/)
+
 Data scientist turned AI engineer. I build full-stack AI applications — from dual-model LLM orchestration and real-time WebSocket architectures to autonomous multi-agent systems and self-supervised learning research. My work spans education, music, computer vision, and behavioral science, with a bias toward shipping production apps over accumulating notebooks.
 
 ## Project Highlights
