@@ -22,6 +22,7 @@ Data scientist turned AI engineer. I build full-stack AI applications — from d
   stay consistent chapter-to-chapter
   - Content is validated (3 choices, retried up to 3x) before streaming word-by-word over WebSocket, with non-critical work deferred to background
   tasks
+  - Eval discipline for non-deterministic AI: structural validation over content assertion, log-based error analysis across 10+ failure categories, and end-to-end simulation through the live WebSocket
   - Sessions survive disconnects with Supabase-backed state persistence and field-level corruption recovery
 
   Stack: FastAPI · Supabase · Google Gemini & Imagen · React · Tailwind · Railway
@@ -37,7 +38,18 @@ An equity research report explained through a PM's lens. A technical whitepaper 
 
 Under the hood: a two-phase Gemini pipeline (extract once, generate per-page) cuts API costs ~70-80% vs sending the full PDF per page — structured output guarantees, no embeddings, no vector stores, fully stateless backend. Notes cached client-side with full-text search and content-hashed Markdown export/import. BYOK, zero server-side key storage.
 
-**[cc_sick_beats](https://github.com/DesmondChoy/cc_sick_beats)** — Autonomous AI band members jam together via Claude Code and Strudel.cc. This isn't just collaborative playback: agents genuinely react to each other. Every 30 seconds, each agent receives the full band state — what everyone else is currently playing — and decides whether to evolve its own pattern or hold the groove. GROOVE locks its kick placement to BEAT's rhythm; ARIA resolves tension against GROOVE's bass line; GLITCH high-passes above 300Hz to stay out of everyone's way. A human "boss" can direct the whole band or target individual agents via @mention syntax. Each agent runs as a persistent Claude process with conversational memory across rounds, so musical personality accumulates over the session.
+**[buttery_smooth_jamming](https://github.com/DesmondChoy/buttery_smooth_jamming)** | [Demo Video](https://www.linkedin.com/feed/update/urn:li:activity:7433764408931205120/)
+
+Four LLM agents, one stage, no sheet music. They don't see each other — they hear each other. A closed-loop browser FFT pipeline turns live Strudel output back into prompt context, so every few seconds each agent decides whether to evolve its pattern, hold the groove, or carve out frequency space the others aren't using. A human bandleader can direct the whole ensemble or target individual agents via @mention syntax. Persistent memory means musical personality compounds across the set — by the third chorus, the rhythm section has developed its own relationship.
+
+What makes it interesting technically:
+- 6.2s p95 end-to-end latency, 100% directive success across 24 runs
+- Closed-loop browser FFT → prompt-context pipeline for live audio reasoning
+- Custom MCP server bridges the Strudel live-coding environment with agent orchestration
+- Independent memory and context-window compaction per agent
+- 3 architectural versions in 27 days; 243 commits, 132 issues tracked, 281 tests — the production successor to the earlier `cc_sick_beats` prototype
+
+Stack: Next.js · TypeScript · Codex · Strudel · MCP · WebSockets
 
 **[moodsic](https://github.com/DesmondChoy/moodsic)** | [Live Demo](https://moodsic-fe.onrender.com/) — Emotion-aware music recommendation using a dual-pathway fusion architecture. A face pathway (EmoNet) captures valence/arousal from facial expressions while a scene pathway (CLIP ViT-B/32) reads emotional context from the visual environment. Variance-weighted blending (0.6 scene / 0.4 face) outperforms face-only by ~7% and scene-only by ~19% on held-out VEATIC data. Recommended songs are matched via nearest-centroid search against a GMM-clustered DEAM music catalogue.
 
