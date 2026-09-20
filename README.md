@@ -16,16 +16,14 @@ Data scientist turned AI engineer. I build full-stack AI applications — from d
   That's Learning Odyssey — an AI storytelling platform where education is invisible because the story is that engaging.
 
   What makes it interesting technically:
-  - Dual-model LLM architecture routes between Gemini Flash and Flash Lite by task complexity (~50% cost reduction across ~515 educational questions
-   and 10 fantasy worlds)
-  - A two-step image pipeline extracts scenes, merges them with tracked character visuals, and synthesizes prompts for Imagen — so illustrations
-  stay consistent chapter-to-chapter
+  - OpenAI generates narrative and scene text; Gemini 2.5 Flash Lite handles supporting tasks such as summaries and prompt synthesis.
+  - An image pipeline combines scene descriptions with tracked character visuals and generates illustrations through Gemini 3.1 Flash Image.
   - Content is validated (3 choices, retried up to 3x) before streaming word-by-word over WebSocket, with non-critical work deferred to background
   tasks
   - Eval discipline for non-deterministic AI: structural validation over content assertion, log-based error analysis across 10+ failure categories, and end-to-end simulation through the live WebSocket
   - Sessions survive disconnects with Supabase-backed state persistence and field-level corruption recovery
 
-  Stack: FastAPI · Supabase · Google Gemini & Imagen · React · Tailwind · Railway
+  Stack: FastAPI · Supabase · OpenAI API · Gemini 2.5 Flash Lite · Gemini 3.1 Flash Image · React · Tailwind · Railway
 
 **[NANA](https://github.com/DesmondChoy/nana)** | [Live Demo](https://nana-app.up.railway.app/)
 
@@ -67,11 +65,21 @@ What makes it interesting technically:
 - **Retrieval evaluated against the actual task:** A paired North Star Moment study across 501 synthetic weeks compared Nomic top-three retrieval with full-history review for selecting supportive quotations. Full history achieved higher precision and recall in both partitions; development Card precision was 75.5% versus 58.6%, supporting its adoption.
 - **The evaluator was tested too:** A source-context diagnostic exposed chronology and causal-interpretation errors that passed automated checks. A known incorrect response still received 5/5 correctness from the same-model evaluator, demonstrating why high evaluation scores needed scrutiny against the original writing.
 
+The responsive Experience includes five synthetic Persona demos spanning 27 replay weeks, with recorded model responses and direct access to each week's Journal Entries and Drift result. North Star Moment adds exact supportive quotations; eligible weeks compare Coach Digest responses generated with and without that context. Inspect exposes the evidence, model settings, and decisions behind the replay.
+
 **Stack:** Python · PyTorch · React · TypeScript · Starlette · Shiny · OpenAI · Polars · Railway
 
 *NUS-ISS capstone proof of concept. Findings use synthetic histories and AI evaluation, alongside a limited human label-agreement study; real-user usefulness remains untested.*
 
-**[ssl_wikichurches](https://github.com/DesmondChoy/ssl_wikichurches)** — Do self-supervised learning (SSL) vision models see what expert architects see? An ongoing research project investigating three questions: (1) whether self-supervised models naturally attend to the same visual features experts consider diagnostic for architectural style, (2) how task-specific fine-tuning shifts attention patterns — and whether linear probing, LoRA, and full fine-tuning produce meaningfully different outcomes, and (3) whether individual attention heads specialize for distinct architectural features, suggesting emergent expert-aligned representations. Evaluated across five ViT-Base models (DINOv2, DINOv3, MAE, CLIP, SigLIP 2) using the WikiChurches dataset.
+**[SSL ViT Models](https://github.com/DesmondChoy/ssl_wikichurches)** | [Report](https://desmondchoy.github.io/projects/ssl-vit-models)
+
+Completed study of whether vision models attend to architectural evidence marked by human experts. Benchmarked DINOv2, DINOv3, MAE, CLIP, SigLIP, SigLIP2, and ResNet-50 on 139 church images with 631 expert boxes. DINOv3 provided the strongest frozen spatial alignment; CLIP and MAE improved after adaptation but on different architectural evidence. Attention-head analysis found that DINO models retained dominant heads while CLIP shifted toward later layers. These are descriptive alignment findings. A FastAPI and React dashboard makes the cached attention maps and metrics inspectable.
+
+**[Aegis AI Travel Insurance Recommender](https://github.com/DesmondChoy/mtech-policy-recsys)** | [Demo](https://aegis-recsys.netlify.app/)
+
+Academic recommender that turns policy PDFs and synthetic customer transcripts into structured requirements, insurer comparisons, and recommendations. Combined deterministic requirement scoring with transcript-aware LLM reranking. Evaluation covered 13 policy PDFs and 80 synthetic customers across four scenarios, with 85–100% scenario pass rates and 87.53% valid requirement coverage.
+
+Stack: Python · Gemini · OpenAI · CrewAI · Pydantic · React · Vite · Netlify
 
 ## Technologies
 
@@ -84,3 +92,4 @@ What makes it interesting technically:
 **Frontend:** React, Next.js, Vite, Shiny
 
 **Infrastructure:** Railway, AWS, Docker, GitHub Actions
+
