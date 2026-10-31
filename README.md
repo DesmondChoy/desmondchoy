@@ -2,7 +2,7 @@
 
 [Website](https://desmondchoy.github.io/)
 
-Data scientist turned AI engineer. I build full-stack AI applications — from dual-model LLM orchestration and real-time WebSocket architectures to autonomous multi-agent systems and self-supervised learning research. My work spans education, music, computer vision, and behavioral science, with a bias toward shipping production apps over accumulating notebooks.
+Data scientist turned applied AI researcher at Manulife. I build and evaluate LLM systems for regulated domains. Projects cover multi-agent systems, self-supervised learning, and behavioral AI. My work spans education, music, computer vision, and behavioral science, with a bias toward shipping production apps over accumulating notebooks.
 
 ## Project Highlights
 
